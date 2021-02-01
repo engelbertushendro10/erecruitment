@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Erecruitmentapp">
-        <activity android:name=".OnboardActivity"></activity>
+        <activity android:name=".engineer.login.EngineerLogin"/>
+        <activity android:name=".engineer.dashboard.EngineerDashboard" />
+        <activity android:name=".company.login.CompanyLogin" />
+        <activity android:name=".company.dashboard.CompanyDashboard" />
+        <activity android:name=".guest.LoginActivity" />
+        <activity android:name=".OnboardActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
