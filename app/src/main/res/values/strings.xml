@@ -1,9 +1,23 @@
 <resources>
-    <string name="app_name">erecruitment-app</string>
+    <string name="app_name">e-recruitment</string>
     <string name="peworld">e-recruitment</string>
     <string name="temukan_dev"> Temukan developer berbakat dan terbaik di berbagai bidang keahlian </string>
     <string name="gambar">logos</string>
     <string name="daftar_boot">Masuk sebagai Engineer</string>
     <string name="daftar_boot1">Masuk sebagai Company</string>
     <string name="atau">atau</string>
+    <string name="version">version 1.0</string>
+    <string name="logo">TODO</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="lorom_ipsum">Please Login to Your Account</string>
+    <string name="lorom_ipsum1">Register Your Account Hire</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_comp">Enter Company Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forget_pass">Forget password ?</string>
+    <string name="anda_belum_">Anda belum punya akun? Daftar disini</string>
+    <string name="anda_sudah_">Anda sudah punya akun? Login disini</string>
 </resources>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Erecruitmentapp">
-        <activity android:name=".engineer.login.EngineerLogin"/>
+        <activity android:name=".engineer.register.EngineerRegister"></activity>
+        <activity android:name=".company.register.CompanyRegister" />
+        <activity android:name=".engineer.login.EngineerLogin" />
         <activity android:name=".engineer.dashboard.EngineerDashboard" />
         <activity android:name=".company.login.CompanyLogin" />
         <activity android:name=".company.dashboard.CompanyDashboard" />

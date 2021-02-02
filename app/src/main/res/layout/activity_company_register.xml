@@ -9,9 +9,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F7F8"
-    tools:context=".company.login.CompanyLogin">
-
+    tools:context=".company.register.CompanyRegister">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="70dp"
@@ -41,13 +39,13 @@
         android:layout_height="44dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="top"
-        android:text="@string/login"
+        android:text="@string/signup"
         android:textAppearance="@style/login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -58,74 +56,86 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
-        android:gravity="top"
-        android:textColor="@color/black"
         android:fontFamily="@font/poppins"
-        android:text="@string/lorom_ipsum"
+        android:gravity="top"
+        android:text="@string/lorom_ipsum1"
         android:textAppearance="@style/lorom_ipsum"
+        android:textColor="@color/black"
         android:textStyle=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="@string/enter_comp"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lorom_ipsum" />
 
     <EditText
         android:id="@+id/et_email"
         android:layout_width="343dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_edittext"
-        android:hint="@string/enter_email"
         android:gravity="center"
+        android:hint="@string/enter_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lorom_ipsum"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="343dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:gravity="center"
-        android:textSize="14sp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_edittext"
+        android:gravity="center"
         android:hint="@string/enter_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email"
-        android:importantForAutofill="no"
-        android:inputType="textPassword" />
-
-    <TextView
-        android:id="@+id/lupa_kata_s"
-        android:layout_width="134dp"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:foregroundGravity="left"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+    <EditText
+        android:id="@+id/et_phon"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext"
         android:gravity="center"
-        android:text="@string/forget_pass"
-        android:textAppearance="@style/forget_pass"
+        android:hint="@string/enter_phone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <RelativeLayout
-        android:id="@+id/comp_login"
+        android:id="@+id/btn_signup"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:background="#FBB017"
         android:gravity="center"
-        android:onClick="compRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lupa_kata_s">
+        app:layout_constraintTop_toBottomOf="@+id/et_phon">
 
         <TextView
             android:layout_width="match_parent"
@@ -146,13 +156,14 @@
         android:layout_marginTop="36dp"
         android:gravity="center"
         android:textSize="15sp"
-        android:text="@string/anda_belum_"
+        android:text="@string/anda_sudah_"
         android:textAppearance="@style/anda_belum_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup"
         app:layout_constraintVertical_bias="0.025" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
